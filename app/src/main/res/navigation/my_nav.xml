@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="uz.umarxon.pdponline.Fragments.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="uz.umarxon.pdponline.Fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_courseListFragment"
+            app:destination="@id/courseListFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/courseListFragment"
+        android:name="uz.umarxon.pdponline.Fragments.CourseListFragment"
+        android:label="fragment_course_list"
+        tools:layout="@layout/fragment_course_list" >
+        <action
+            android:id="@+id/action_courseListFragment_to_moduleListFragment"
+            app:destination="@id/moduleListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/moduleListFragment"
+        android:name="uz.umarxon.pdponline.Fragments.ModuleListFragment"
+        android:label="fragment_module_list"
+        tools:layout="@layout/fragment_module_list" >
+        <action
+            android:id="@+id/action_moduleListFragment_to_lessonFragment"
+            app:destination="@id/lessonFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lessonFragment"
+        android:name="uz.umarxon.pdponline.Fragments.LessonFragment"
+        android:label="fragment_lesson"
+        tools:layout="@layout/fragment_lesson" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="uz.umarxon.pdponline.Fragments.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_settingFragment_to_editCourseFragment"
+            app:destination="@id/editCourseFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_moduleAddFragment"
+            app:destination="@id/moduleAddFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editCourseFragment"
+        android:name="uz.umarxon.pdponline.Fragments.EditCourseFragment"
+        android:label="fragment_edit_course"
+        tools:layout="@layout/fragment_edit_course" />
+    <fragment
+        android:id="@+id/moduleAddFragment"
+        android:name="uz.umarxon.pdponline.Fragments.ModuleAddFragment"
+        android:label="fragment_module_add"
+        tools:layout="@layout/fragment_module_add" >
+        <action
+            android:id="@+id/action_moduleAddFragment_to_editModuleFragment"
+            app:destination="@id/editModuleFragment" />
+        <action
+            android:id="@+id/action_moduleAddFragment_to_lessondAddFragment"
+            app:destination="@id/lessondAddFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editModuleFragment"
+        android:name="uz.umarxon.pdponline.Fragments.EditModuleFragment"
+        android:label="fragment_edit_module"
+        tools:layout="@layout/fragment_edit_module" />
+    <fragment
+        android:id="@+id/lessondAddFragment"
+        android:name="uz.umarxon.pdponline.Fragments.LessondAddFragment"
+        android:label="fragment_lessond_add"
+        tools:layout="@layout/fragment_lessond_add" >
+        <action
+            android:id="@+id/action_lessondAddFragment_to_editLessonFragment2"
+            app:destination="@id/editLessonFragment" />
+        <action
+            android:id="@+id/action_lessondAddFragment_to_lessonFragment"
+            app:destination="@id/lessonFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editLessonFragment"
+        android:name="uz.umarxon.pdponline.Fragments.EditLessonFragment"
+        android:label="fragment_edit_lesson"
+        tools:layout="@layout/fragment_edit_lesson" />
+</navigation>

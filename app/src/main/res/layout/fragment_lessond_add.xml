@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".Fragments.LessondAddFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/module_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20sp"
+                android:text="Kotlin Basic"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginHorizontal="20sp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edt_bg"
+                android:hint="Dars nomi"
+                android:paddingStart="20sp"
+                android:inputType="text"
+                android:textColor="#A09C9C"
+                android:textColorHint="#A09C9C"
+                tools:ignore="RtlSymmetry" />
+
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginHorizontal="20sp"
+                android:layout_marginTop="10dp"
+                android:gravity="top"
+                android:paddingTop="20dp"
+                android:background="@drawable/edt_bg"
+                android:hint="Dars bo'yicha ma'lumot"
+                android:inputType="text"
+                android:paddingStart="20sp"
+                android:textColor="#A09C9C"
+                android:textColorHint="#A09C9C"
+                tools:ignore="RtlSymmetry" />
+
+            <EditText
+                android:id="@+id/course_pos"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginHorizontal="20sp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edt_bg"
+                android:hint="Dars o'rni"
+                android:inputType="phone"
+                android:paddingStart="20sp"
+                android:textColor="#A09C9C"
+                android:textColorHint="#A09C9C"
+                tools:ignore="RtlSymmetry" />
+
+            <ImageView
+                android:id="@+id/add_lesson"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20sp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/fab_bg"
+                android:elevation="10dp"
+                android:padding="15dp"
+                android:src="@drawable/ic_baseline_add_24"
+                app:tint="@color/white" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/add_module_rv_item"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

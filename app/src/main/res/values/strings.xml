@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">PDP Online</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dasturlashni_qulay_nmuhitda_o_rganing">Dasturlashni qulay \nmuhitda o’rganing</string>
+    <string name="barchasi">Barchasi</string>
+    <string name="kotlin_basic">Kotlin Basic</string>
+    <string name="ten">10</string>
+    <string name="txt">Kotlin - bu Android dasturlarini ishlab \nchiqish uchun juda mos keladi, zamonaviy \ntilning barcha afzalliklarini Android \nplatformasiga hech qanday yangi\ncheklovlarsiz kiritadi:\n\nMoslashuvchanlik: Kotlin JDK 6-ga to\'liq mos keladi, Kotlin ilovalari eski Android qurilmalarida muammosiz ishlashini ta\'minlaydi. Kotlin vositasi Android Studio-da to\'liq qo\'llab-quvvatlanadi va Android OS tizimiga mos keladi.\n\nSamaradorlik: Kotlin loyihalarda bytekod tuzilishi tufayli Java-ga o\'xshash ekvivalent kabi tez ishlaydi. Kotlin-ning ichki funksiyalarini qo\'llab-quvvatlashi bilan lambdalardan foydalanadigan kod ko\'pincha Java-da yozilgan koddan tezroq ishlaydi.
+</string>
+    <string name="kotlin_dasturlash_tili_va_tarixi">Kotlin \ndasturlash \ntili va tarixi</string>
+    <string name="kurs_nomi">Kurs nomi</string>
+    <string name="android_development">Android Development</string>
+</resources>
